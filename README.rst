@@ -29,6 +29,11 @@ Requirements
 - Python 2.7, 3.3, 3.4
 - flake8
 
+TODO
+----
+- add a way to provide more deprecations on a per user basis(?), other plugins(?)
+- add a way to ignore specific deprecations
+
 License
 -------
 GPL 2.0
