@@ -13,6 +13,9 @@ class Flake8Deprecated(object):
         'assertRaises': ('failUnlessRaises', ),
         'assertAlmostEqual': ('failUnlessAlmostEqual', ),
         'assertNotAlmostEqual': ('failIfAlmostEqual', ),
+        'AccessControl.ClassSecurityInfo.protected': ('declareProtected', ),
+        'AccessControl.ClassSecurityInfo.private': ('declarePrivate', ),
+        'AccessControl.ClassSecurityInfo.public': ('declarePublic', ),
     }
 
     def __init__(self, tree, filename):
