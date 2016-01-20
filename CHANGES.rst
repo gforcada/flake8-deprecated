@@ -5,9 +5,8 @@ Changelog
 
 0.2 (unreleased)
 ----------------
-
-- Nothing changed yet.
-
+- Suggest to use AccessControl and zope.interface decorators.
+  [gforcada]
 
 0.1 (2015-09-17)
 ----------------
