@@ -11,6 +11,9 @@ Changelog
 - Avoid false reports by suffixing an opening parenthesis on all methods.
   [gforcada]
 
+- Add decorators from zope.interface and zope.component.
+  [gforcada]
+
 0.2 (2016-01-20)
 ----------------
 - Suggest to use AccessControl and zope.interface decorators.
