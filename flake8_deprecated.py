@@ -19,6 +19,8 @@ class Flake8Deprecated(object):
         'zope.interface.provider': ('directlyProvides', ),
         'zope.interface.implementer': ('classImplements', ),
         'xmlconfig.file(': ('self.loadZCML', ),
+        'implements(': ('zope.interface.implementer (decorator)', ),
+        'adapts(': ('zope.interface.adapter (decorator)', ),
     }
 
     def __init__(self, tree, filename):
