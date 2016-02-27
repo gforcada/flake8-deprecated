@@ -5,6 +5,9 @@ Changelog
 
 0.3 (unreleased)
 ----------------
+- Warn if using xmlconfig.file, self.loadZCML is the preferred option.
+  [gforcada]
+
 - Avoid false reports by suffixing an opening parenthesis on all methods.
   [gforcada]
 
