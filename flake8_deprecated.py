@@ -18,7 +18,7 @@ class Flake8Deprecated(object):
         'AccessControl.ClassSecurityInfo.public': ('declarePublic(', ),
         'zope.interface.provider': ('directlyProvides(', ),
         'zope.interface.implementer': ('classImplements(', ),
-        'xmlconfig.file(': ('self.loadZCML(', ),
+        'self.loadZCML(': ('xmlconfig.file(', ),
     }
 
     def __init__(self, tree, filename):
