@@ -3,6 +3,12 @@
 Changelog
 =========
 
+1.1 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
 1.0 (2016-02-27)
 ----------------
 - Warn if using xmlconfig.file, self.loadZCML is the preferred option.
