@@ -5,9 +5,8 @@ Changelog
 
 0.3 (unreleased)
 ----------------
-
-- Nothing changed yet.
-
+- Avoid false reports by suffixing an opening parenthesis on all methods.
+  [gforcada]
 
 0.2 (2016-01-20)
 ----------------

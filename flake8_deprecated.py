@@ -6,19 +6,19 @@ class Flake8Deprecated(object):
     version = '0.1'
     message = 'D001 found {0:s} replace it with {1:s}'
     checks = {
-        'assertEqual': ('failUnlessEqual', 'assertEquals', ),
-        'assertNotEqual': ('failIfEqual', ),
-        'assertTrue': ('failUnless(', 'assert_', ),
+        'assertEqual': ('failUnlessEqual(', 'assertEquals(', ),
+        'assertNotEqual': ('failIfEqual(', ),
+        'assertTrue': ('failUnless(', 'assert_(', ),
         'assertFalse': ('failIf(', ),
-        'assertRaises': ('failUnlessRaises', ),
-        'assertAlmostEqual': ('failUnlessAlmostEqual', ),
-        'assertNotAlmostEqual': ('failIfAlmostEqual', ),
-        'AccessControl.ClassSecurityInfo.protected': ('declareProtected', ),
-        'AccessControl.ClassSecurityInfo.private': ('declarePrivate', ),
-        'AccessControl.ClassSecurityInfo.public': ('declarePublic', ),
-        'zope.interface.provider': ('directlyProvides', ),
-        'zope.interface.implementer': ('classImplements', ),
-        'xmlconfig.file(': ('self.loadZCML', ),
+        'assertRaises': ('failUnlessRaises(', ),
+        'assertAlmostEqual': ('failUnlessAlmostEqual(', ),
+        'assertNotAlmostEqual': ('failIfAlmostEqual(', ),
+        'AccessControl.ClassSecurityInfo.protected': ('declareProtected(', ),
+        'AccessControl.ClassSecurityInfo.private': ('declarePrivate(', ),
+        'AccessControl.ClassSecurityInfo.public': ('declarePublic(', ),
+        'zope.interface.provider': ('directlyProvides(', ),
+        'zope.interface.implementer': ('classImplements(', ),
+        'xmlconfig.file(': ('self.loadZCML(', ),
     }
 
     def __init__(self, tree, filename):
