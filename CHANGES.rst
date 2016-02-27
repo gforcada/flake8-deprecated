@@ -3,7 +3,7 @@
 Changelog
 =========
 
-0.3 (unreleased)
+1.0 (2016-02-27)
 ----------------
 - Warn if using xmlconfig.file, self.loadZCML is the preferred option.
   [gforcada]
