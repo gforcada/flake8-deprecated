@@ -37,7 +37,8 @@ class TestFlake8Deprecated(unittest.TestCase):
         self.assertEqual(ret[0][1], 9)
         self.assertEqual(
             ret[0][2],
-            'D001 found failUnlessAlmostEqual replace it with assertAlmostEqual'
+            'D001 found failUnlessAlmostEqual( replace it with '
+            'assertAlmostEqual'
         )
 
 
