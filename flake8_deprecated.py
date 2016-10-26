@@ -31,9 +31,10 @@ class Flake8Deprecated(object):
         with open(self.filename) as f:
             for lineno, line in enumerate(f, start=1):
                 for newer_version, old_alias in self.flat_checks:
-                    if line.find(old_alias) != -1:
+                    position = line.find(old_alias)
+                    if position != -1:
                         msg = self.message.format(old_alias, newer_version)
-                        yield lineno, line.find(old_alias), msg, type(self)
+                        yield lineno, position, msg, type(self)
 
     def _flatten_checks(self):
         flattened_checks = []
