@@ -3,7 +3,7 @@
 
 class Flake8Deprecated(object):
     name = 'flake8_deprecated'
-    version = '0.1'
+    version = '1.1'
     message = 'D001 found {0:s} replace it with {1:s}'
     checks = {
         'assertEqual': ('failUnlessEqual(', 'assertEquals(', ),
