@@ -45,6 +45,6 @@ setup(
         'flake8',
     ],
     entry_points={
-        'flake8.extension': ['P00 = flake8_deprecated:Flake8Deprecated'],
+        'flake8.extension': ['D001 = flake8_deprecated:Flake8Deprecated'],
     },
 )
