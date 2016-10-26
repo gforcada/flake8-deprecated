@@ -42,7 +42,7 @@ setup(
     test_suite = 'run_tests',
     zip_safe=False,
     install_requires=[
-        'flake8',
+        'flake8 >= 3.0.0',
     ],
     entry_points={
         'flake8.extension': ['D001 = flake8_deprecated:Flake8Deprecated'],
