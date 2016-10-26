@@ -6,8 +6,11 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix compatibility with flake8 3.
+  [gforcada]
 
+- Require flake8 > 3.0.
+  [gforcada]
 
 1.0 (2016-02-27)
 ----------------
