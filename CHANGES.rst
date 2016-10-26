@@ -3,7 +3,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2016-10-26)
 ----------------
 
 - Fix compatibility with flake8 3.
