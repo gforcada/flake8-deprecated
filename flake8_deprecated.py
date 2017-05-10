@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
+try:
+    from flake8.engine import pep8 as stdin_utils
+except ImportError:
+    from flake8 import utils as stdin_utils
 
 
 class Flake8Deprecated(object):
     name = 'flake8_deprecated'
-    version = '1.1'
+    version = '1.2'
     message = 'D001 found {0:s} replace it with {1:s}'
     checks = {
         'assertEqual': ('failUnlessEqual(', 'assertEquals(', ),
@@ -28,13 +32,18 @@ class Flake8Deprecated(object):
         self.flat_checks = self._flatten_checks()
 
     def run(self):
-        with open(self.filename) as f:
-            for lineno, line in enumerate(f, start=1):
-                for newer_version, old_alias in self.flat_checks:
-                    position = line.find(old_alias)
-                    if position != -1:
-                        msg = self.message.format(old_alias, newer_version)
-                        yield lineno, position, msg, type(self)
+        if self.filename == 'stdin':
+            lines = stdin_utils.stdin_get_value().splitlines(True)
+        else:
+            with open(self.filename) as f:
+                lines = f.readlines()
+
+        for lineno, line in enumerate(lines, start=1):
+            for newer_version, old_alias in self.flat_checks:
+                position = line.find(old_alias)
+                if position != -1:
+                    msg = self.message.format(old_alias, newer_version)
+                    yield lineno, position, msg, type(self)
 
     def _flatten_checks(self):
         flattened_checks = []
