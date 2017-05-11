@@ -9,6 +9,12 @@ Changelog
 - added support for sublimetext (stdin/filename handling)
   [iham]
 
+- Release as universal wheels.
+  [gforcada]
+
+- Only test against Python 2.7, 3.5 and 3.6.
+  It most probably works on earlier versions of 2.x and 3.x but it's pointless to test on them as well.
+  [gforcada]
 
 1.1 (2016-10-26)
 ----------------
