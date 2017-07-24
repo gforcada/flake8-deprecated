@@ -3,8 +3,8 @@
 Changelog
 =========
 
-1.3 (unreleased)
-----------------
+1.2.1 (2017-07-24)
+------------------
 - Fix UnicodeDecodeError if system locale is not UTF-8.
   [sshishov]
 
