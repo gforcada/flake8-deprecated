@@ -5,14 +5,12 @@ Changelog
 
 1.3 (unreleased)
 ----------------
-
-- Nothing changed yet.
-
+- Fix UnicodeDecodeError if system locale is not UTF-8.
+  [sshishov]
 
 1.2 (2017-05-12)
 ----------------
-
-- added support for sublimetext (stdin/filename handling)
+- added support for sublimetext (stdin/filename handling).
   [iham]
 
 - Release as universal wheels.
@@ -24,7 +22,6 @@ Changelog
 
 1.1 (2016-10-26)
 ----------------
-
 - Fix compatibility with flake8 3.
   [gforcada]
 
@@ -49,7 +46,7 @@ Changelog
 
 0.1 (2015-09-17)
 ----------------
-- Initial release
+- Initial release.
   [gforcada]
 
 - Create the flake8 plugin per se.
