@@ -35,8 +35,8 @@ class Flake8Deprecated(object):
         if self.filename == 'stdin':
             lines = stdin_utils.stdin_get_value().splitlines(True)
         else:
-            with open(self.filename) as f:
-                lines = f.readlines()
+            with open(self.filename, 'rb') as f:
+                lines = [line.decode('utf-8') for line in f.readlines()]
 
         for lineno, line in enumerate(lines, start=1):
             for newer_version, old_alias in self.flat_checks:
