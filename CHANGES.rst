@@ -6,8 +6,8 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Use the ast module to parse the code and ensure no false positives are found.
+  [alexmuller]
 
 1.2.1 (2017-07-24)
 ------------------
