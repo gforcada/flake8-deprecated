@@ -3,8 +3,8 @@
 Changelog
 =========
 
-1.2.2 (unreleased)
-------------------
+1.2.2.dev0 (2017-10-22)
+-----------------------
 
 - Use the ast module to parse the code and ensure no false positives are found.
   [alexmuller]
