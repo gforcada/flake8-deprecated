@@ -18,9 +18,8 @@ class Flake8Deprecated(object):
         'AccessControl.ClassSecurityInfo.private': ('declarePrivate', ),
         'AccessControl.ClassSecurityInfo.public': ('declarePublic', ),
         'zope.interface.provider': ('directlyProvides', ),
-        'zope.interface.implementer': ('classImplements', ),
+        'zope.interface.implementer': ('classImplements', 'implements', ),
         'self.loadZCML(': ('xmlconfig.file', ),
-        'zope.interface.implementer': ('implements', ),
         'zope.component.adapter': ('adapts', ),
     }
 
@@ -30,7 +29,8 @@ class Flake8Deprecated(object):
 
     def run(self):
         for node in ast.walk(self.tree):
-            if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute):
+            if isinstance(node, ast.Call) and \
+               isinstance(node.func, ast.Attribute):
                 for newer_version, old_alias in self.flat_checks:
                     if node.func.attr == old_alias:
                         msg = self.message.format(old_alias, newer_version)
