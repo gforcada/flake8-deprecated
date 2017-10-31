@@ -6,8 +6,8 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Fix flake8 errors on this package and enforce them on CI.
+  [alexmuller]
 
 1.2.2.dev0 (2017-10-22)
 -----------------------
