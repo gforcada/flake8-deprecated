@@ -3,8 +3,8 @@
 Changelog
 =========
 
-1.2.2 (unreleased)
-------------------
+1.3 (2017-10-31)
+----------------
 
 - Fix flake8 errors on this package and enforce them on CI.
   [alexmuller]
