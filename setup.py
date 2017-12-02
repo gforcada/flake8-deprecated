@@ -7,7 +7,7 @@ short_description = 'Warns about deprecated method calls.'
 
 long_description = '{0}\n{1}'.format(
     open('README.rst').read(),
-    open('CHANGES.rst').read()
+    open('CHANGES.rst').read(),
 )
 
 
@@ -20,6 +20,7 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
+        'Framework :: Flake8',
         'Framework :: Plone',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
@@ -30,6 +31,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Topic :: Software Development',
         'Topic :: Software Development :: Quality Assurance',
     ],
     keywords='pep8 flake8 deprecations',
