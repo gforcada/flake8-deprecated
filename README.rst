@@ -26,7 +26,7 @@ Install with pip::
 
 Requirements
 ------------
-- Python 2.7, 3.5, 3.6
+- Python 2.7, 3.5+
 - flake8
 
 TODO
