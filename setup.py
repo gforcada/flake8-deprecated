@@ -2,6 +2,7 @@ from setuptools import setup
 
 short_description = 'Warns about deprecated method calls.'
 
+
 def read_file(filename):
     with open(filename) as file_obj:
         file_contents = file_obj.read()
@@ -46,18 +47,14 @@ setup(
     author_email='gil.gnome@gmail.com',
     url='https://github.com/gforcada/flake8-deprecated',
     license='GPL version 2',
-    py_modules=['flake8_deprecated', ],
+    py_modules=[
+        'flake8_deprecated',
+    ],
     include_package_data=True,
     test_suite='run_tests',
     zip_safe=False,
-    install_requires=[
-        'flake8'
-    ],
-    extras_require={
-        'test': [
-            'pytest'
-        ]
-    },
+    install_requires=['flake8'],
+    extras_require={'test': ['pytest']},
     entry_points={
         'flake8.extension': ['D001 = flake8_deprecated:Flake8Deprecated'],
     },

@@ -1,29 +1,35 @@
-# -*- coding: utf-8 -*-
-from flake8_deprecated import Flake8Deprecated
-
 import ast
 import unittest
 
+from flake8_deprecated import Flake8Deprecated
+
 
 class TestFlake8Deprecated(unittest.TestCase):
-
     def _given_test_data(self, contents):
         return ast.parse(contents)
 
     def test_no_deprecations_all_good(self):
-        tree = self._given_test_data('\n'.join([
-            'b = 3',
-            'b.lower()',
-        ]))
+        tree = self._given_test_data(
+            '\n'.join(
+                [
+                    'b = 3',
+                    'b.lower()',
+                ]
+            )
+        )
         checker = Flake8Deprecated(tree)
         ret = list(checker.run())
         self.assertEqual(len(ret), 0)
 
     def test_s_formatter(self):
-        tree = self._given_test_data('\n'.join([
-            'import unittest',
-            'unittest.failUnlessAlmostEqual()',
-        ]))
+        tree = self._given_test_data(
+            '\n'.join(
+                [
+                    'import unittest',
+                    'unittest.failUnlessAlmostEqual()',
+                ]
+            )
+        )
         checker = Flake8Deprecated(tree)
         ret = list(checker.run())
         self.assertEqual(len(ret), 1)
@@ -31,16 +37,19 @@ class TestFlake8Deprecated(unittest.TestCase):
         self.assertEqual(ret[0][1], 0)
         self.assertEqual(
             ret[0][2],
-            'D001 found failUnlessAlmostEqual replace it with '
-            'assertAlmostEqual'
+            'D001 found failUnlessAlmostEqual replace it with ' 'assertAlmostEqual',
         )
 
     def test_ignores_comments(self):
-        tree = self._given_test_data('\n'.join([
-            'import unittest',
-            '# Maybe we could use assertEquals() here?',
-            'unittest.assertEquals()',
-        ]))
+        tree = self._given_test_data(
+            '\n'.join(
+                [
+                    'import unittest',
+                    '# Maybe we could use assertEquals() here?',
+                    'unittest.assertEquals()',
+                ]
+            )
+        )
         checker = Flake8Deprecated(tree)
         ret = list(checker.run())
         self.assertEqual(len(ret), 1)
