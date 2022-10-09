@@ -13,7 +13,7 @@ The project evolves, new features are added/changed/removed.
 
 This means that projects relying on them must keep an eye on what's currently best practices.
 
-This flake8 plugin helps you keeping up with method deprecations ans giving hints about what
+This flake8 plugin helps you keeping up with method deprecations and giving hints about what
 they should be replaced with.
 
 This plugin is based on a python checker that was in `plone.recipe.codeanalysis`_.
