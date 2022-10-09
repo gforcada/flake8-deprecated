@@ -3,8 +3,8 @@
 Changelog
 =========
 
-1.4 (unreleased)
-----------------
+2.0.0 (2022-10-09)
+------------------
 
 - Test the code in all python versions supported on GitHub actions. [gforcada]
 
