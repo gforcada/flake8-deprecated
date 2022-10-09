@@ -1,9 +1,9 @@
 .. -*- coding: utf-8 -*-
 
-.. image:: https://travis-ci.org/gforcada/flake8-deprecated.svg?branch=master
-   :target: https://travis-ci.org/gforcada/flake8-deprecated
+.. image:: https://github.com/gforcada/flake8-deprecated/actions/workflows/testing.yml/badge.svg?branch=master
+   :target: https://github.com/gforcada/flake8-deprecated/actions/workflows/testing.yml
 
-.. image:: https://coveralls.io/repos/gforcada/flake8-deprecated/badge.svg?branch=master&service=github
+.. image:: https://coveralls.io/repos/gforcada/flake8-deprecated/badge.svg?branch=master
    :target: https://coveralls.io/github/gforcada/flake8-deprecated?branch=master
 
 Flake8 deprecations plugin
@@ -13,7 +13,7 @@ The project evolves, new features are added/changed/removed.
 
 This means that projects relying on them must keep an eye on what's currently best practices.
 
-This flake8 plugin helps you keeping up with method deprecations ans giving hints about what
+This flake8 plugin helps you keeping up with method deprecations and giving hints about what
 they should be replaced with.
 
 This plugin is based on a python checker that was in `plone.recipe.codeanalysis`_.
@@ -26,7 +26,7 @@ Install with pip::
 
 Requirements
 ------------
-- Python 2.7, 3.5+
+- Python 3.7, 3.8, 3.9, 3.10 and pypy3
 - flake8
 
 TODO

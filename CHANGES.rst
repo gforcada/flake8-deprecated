@@ -6,8 +6,15 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Test the code in all python versions supported on GitHub actions. [gforcada]
 
+- Pin dependencies, to ensure reproducible builds. [gforcada]
+
+- Drop python 2.7 and only support 3.7+. [gforcada]
+
+- Ensure all deprecation aliases work. [gforcada]
+
+- Check decorators as well. [gforcada]
 
 1.3 (2017-10-31)
 ----------------
