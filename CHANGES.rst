@@ -6,8 +6,7 @@ Changelog
 2.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Handle subscripts in method calls, thanks to @The-Compiler for the report. [gforcada]
 
 2.0.0 (2022-10-09)
 ------------------
