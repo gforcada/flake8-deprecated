@@ -3,7 +3,7 @@
 Changelog
 =========
 
-2.0.1 (unreleased)
+2.0.1 (2022-10-11)
 ------------------
 
 - Handle subscripts in method calls, thanks to @The-Compiler for the report. [gforcada]
