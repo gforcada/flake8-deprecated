@@ -57,6 +57,14 @@ def test_error_line():
     assert return_statements[0][0] == 3
 
 
+def test_handle_subscripts():
+    source = """
+    funcs = [print]
+    funcs[0]("Hello World")
+    """
+    check_code(source)
+
+
 def test_error_column():
     source = """
         class Foo:
