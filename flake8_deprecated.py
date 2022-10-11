@@ -67,7 +67,9 @@ class Flake8Deprecated:
 
         Note that this can be endlessly nested, i.e. self.obj.another.more.SOME_CALL()
         """
-        method_name = node.func.attr
+        method_name = getattr(node.func, 'attr', None)
+        if not method_name:
+            return
         is_obj = getattr(node.func, 'value', False)
         for old_alias in self.old_aliases:
             if method_name == old_alias:
