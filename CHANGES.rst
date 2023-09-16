@@ -9,6 +9,9 @@ Changelog
 - Drop python 3.7 support.
   [gforcada]
 
+- Fix error message.
+  [dhood]
+
 2.0.1 (2022-10-11)
 ------------------
 
