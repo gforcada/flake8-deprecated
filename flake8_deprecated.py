@@ -118,6 +118,6 @@ class Flake8Deprecated:
         return (
             statement.lineno,
             statement.col_offset,
-            self.message.format(self.old_aliases[old_alias], old_alias),
+            self.message.format(old_alias, self.old_aliases[old_alias]),
             type(self),
         )
