@@ -3,7 +3,7 @@
 Changelog
 =========
 
-2.2.1 (unreleased)
+2.2.1 (2023-11-02)
 ------------------
 
 - Something went wrong with the previous release.
