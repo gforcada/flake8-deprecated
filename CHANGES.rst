@@ -6,8 +6,17 @@ Changelog
 2.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use `pyproject.toml` rather than `setup.py`.
+  [gforcada]
 
+- Switch from `setuptools` to `hatchling`.
+  [gforcada]
+
+- Switch to `main` branch.
+  [gforcada]
+
+- Use `tox` and `pre-commit` to ease project maintenance.
+  [gforcada]
 
 2.1.0 (2023-09-16)
 ------------------
