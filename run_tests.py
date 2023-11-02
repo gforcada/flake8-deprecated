@@ -1,9 +1,8 @@
-import ast
-import textwrap
-
-import pytest
-
 from flake8_deprecated import Flake8Deprecated
+
+import ast
+import pytest
+import textwrap
 
 
 def check_code(source, expected_codes=None):
