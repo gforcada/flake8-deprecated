@@ -6,8 +6,8 @@ Changelog
 2.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Something went wrong with the previous release.
+  [gforcada]
 
 2.2.0 (2023-11-02)
 ------------------
