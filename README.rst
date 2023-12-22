@@ -1,10 +1,10 @@
 .. -*- coding: utf-8 -*-
 
-.. image:: https://github.com/gforcada/flake8-deprecated/actions/workflows/testing.yml/badge.svg?branch=master
+.. image:: https://github.com/gforcada/flake8-deprecated/actions/workflows/testing.yml/badge.svg?branch=main
    :target: https://github.com/gforcada/flake8-deprecated/actions/workflows/testing.yml
 
-.. image:: https://coveralls.io/repos/gforcada/flake8-deprecated/badge.svg?branch=master
-   :target: https://coveralls.io/github/gforcada/flake8-deprecated?branch=master
+.. image:: https://coveralls.io/repos/gforcada/flake8-deprecated/badge.svg?branch=main
+   :target: https://coveralls.io/github/gforcada/flake8-deprecated?branch=main
 
 Flake8 deprecations plugin
 ==========================
