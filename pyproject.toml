@@ -12,7 +12,7 @@ description = "Warns about deprecated method calls"
 keywords = ["pep8", "flake8", "python", ]
 license = {file = "LICENSE"}
 readme = "README.rst"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 classifiers = [
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
@@ -24,11 +24,11 @@ classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
         "Topic :: Software Development",
@@ -51,7 +51,7 @@ D001 = "flake8_deprecated:Flake8Deprecated"
 profile = "plone"
 
 [tool.black]
-target-version = ["py38"]
+target-version = ["py312"]
 skip-string-normalization = true
 
 [tool.check-manifest]

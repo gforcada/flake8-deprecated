@@ -6,8 +6,8 @@ Changelog
 2.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Add support for Python 3.13 and drop Python 3.8.
+  [gforcada]
 
 2.2.1 (2023-11-02)
 ------------------
