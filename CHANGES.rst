@@ -9,6 +9,11 @@ Changelog
 - Add support for Python 3.13 and drop Python 3.8.
   [gforcada]
 
+- Drop python 3.9 support and add Python 3.14 support.
+  [gforcada]
+
+- Bump pypy minimum version to 3.10.
+
 2.2.1 (2023-11-02)
 ------------------
 
