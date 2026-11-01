@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.3.1 (unreleased)
+## 2.4.0 (2026-11-01)
 
 - update supported python versions (3.11 to 3.15) @gforcada
 
